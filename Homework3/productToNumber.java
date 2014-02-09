@@ -12,15 +12,26 @@ mostrar
 
 */
 
-public class productToNumber {   
-
-   public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
-
-
-   		System.out.println("el producto es: "+resultado);
-      
-   }
-
+public class productToNumber {
+  public static void main(String[] args) {
+        
+	int numero = Integer.parseInt(args[0].toString());
+	int bandera = Integer.parseInt(args[0].toString());
+        int factorial = 1;
+        String multi = "X";
+	String resultado = "";
+	
+	while(numero != 0){ 	
+		if(numero == bandera){
+			resultado= numero+resultado;
+			factorial *= numero;
+			numero= numero-1;
+		}else{
+			resultado= numero+multi+resultado;
+			factorial *= numero;
+			numero= numero-1;
+		}	
+	}
+	System.out.println(resultado+"="+factorial);
+    }
 }

@@ -8,15 +8,15 @@ Dado un numero mayor a cero, imprima el valor actual desde cero hasta antes de l
 
 */
 
-public class whileValue {   
-
-   public static void main(String[] args) {
-   		int valorActual = 0;
-   		System.out.println(args[0]);
-
-   		//si valor actual < args[0]
-   			System.out.println("el valor actual es: "+valorActual);
-      
-   }
-
+public class whileValue{
+	public static void main(String[] args){
+		int ValorActual=-1;
+		int Numero;
+			System.out.println(args[0]);
+		Numero=Integer.parseInt(args[0].toString());
+	while (Numero > ValorActual){
+		ValorActual++;
+			System.out.println("El valor actual es: "+ValorActual);
+		}	
+	}
 }

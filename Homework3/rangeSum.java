@@ -7,15 +7,21 @@ Dados 2 numeros (limite inferior y superior), recorra el rango e imprima los num
 
 */
 
-public class rangeSum {   
-
-   public static void main(String[] args) {
-
-		System.out.println("limites: "+args[0]+" "+args[1]);
-
-      
-         System.out.println("numero actual es:" );
-      
-   }
-
+public class rangeSum{
+	public static void main(String[] args){
+		int valor1 = 0;
+		int valor2 = 0;
+			System.out.println("LIMITES: "+args[0]+" - "+args[1]);
+		valor1 = Integer.parseInt(args[0].toString());
+		valor2 = Integer.parseInt(args[1].toString());
+	if(valor1<valor2){
+		for(int valor3=valor1+1; valor3 < valor2; valor3++){
+			System.out.println(+valor3);
+				}	
+		}else{
+			for(int valor4=valor1-1; valor4	> valor2; valor4--){
+			System.out.println(+valor4);
+			}
+		}
+	}
 }
